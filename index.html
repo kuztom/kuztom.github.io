@@ -10,7 +10,8 @@
     Click it!
 </h1>
 
-<button id="btn">Click Here!</button>
+<button id="btn">Add</button>
+<button id="btnM">Remove</button>
 
 <p>
     Clicked <span
@@ -20,10 +21,16 @@
 <script type="text/javascript">
     var count = 0;
     var btn = document.getElementById("btn");
+    var btnM = document.getElementById("btnM");
     var disp = document.getElementById("display");
 
     btn.onclick = function () {
         count++;
+        disp.innerHTML = count;
+    }
+
+    btnM.onclick = function () {
+        count--;
         disp.innerHTML = count;
     }
 </script>
